@@ -29,7 +29,8 @@
 				 <ondown condition="[Container(20).HasFocus(9) + !Skin.HasSetting(HideSettingsSubMenu)]
 													| [Container(20).HasFocus(2) + !Skin.HasSetting(HideMoviesSubMenu)]
 													| [Container(20).HasFocus(1) + !Skin.HasSetting(HideTVShowsSubMenu)]
-													| [Container(20).HasFocus(3) + !Skin.HasSetting(HideMusicSubMenu)]">SetFocus(23)</ondown>
+													| [Container(20).HasFocus(3) + !Skin.HasSetting(HideMusicSubMenu)]
+													| [Container(20).HasFocus(7) + !Skin.HasSetting(HideAddonsSubMenu)]">SetFocus(23)</ondown>
 				 <ondown condition="[Container(20).HasFocus(2) + Skin.HasSetting(HideMoviesSubMenu)]
 													| [Container(20).HasFocus(1) + Skin.HasSetting(HideTVShowsSubMenu)]
 													| [Container(20).HasFocus(3) + Skin.HasSetting(HideMusicSubMenu)]">SetFocus(81)</ondown>
@@ -1186,6 +1187,7 @@
 		<include condition="!Skin.HasSetting(HideTVShowsSubMenu)">HomeSubMenuTVShows</include>
 		<include condition="!Skin.HasSetting(HideMusicSubMenu)">HomeSubMenuMusic</include>
 		<include condition="!Skin.HasSetting(HideSettingsSubMenu)">HomeSubMenuSettings</include>
+		<include condition="!Skin.HasSetting(HideAddonsSubMenu)">HomeSubMenuAddons</include>
 		<include>SkinWidgetsLists</include>
 		<include>HomeSubMenusArrows</include>
 		<include>CommonDialogsFadeOutBG</include>

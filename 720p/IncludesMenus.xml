@@ -153,6 +153,44 @@
 		</control>				
 	</include>
 
+	  <!-- Home SubMenu Addons -->
+	<include name="HomeSubMenuAddons">
+
+		<control type="wraplist" id="23">
+			<description>SubMenu Container Addons</description>
+			<visible>![Window.IsActive(ShutdownMenu) | Window.IsActive(BusyDialog) | Window.IsActive(ProgressDialog) | Window.IsActive(PlayerControls) | Container(20).OnNext | Container(20).OnPrevious] + Container(20).HasFocus(7)</visible>
+			<include>SubMenuWraplistVarsDown</include>
+			<itemlayout height="46">
+				<control type="label">
+					<include>SubMenuItemLayoutVarsDown</include>
+				</control>
+			</itemlayout>
+			<focusedlayout height="55">
+				<control type="label">
+					<include>SubMenuFocusedLayoutVarsDown</include>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="0">
+					<label>$LOCALIZE[3]</label>
+					<onclick>ActivateWindow(videos,addons,return)</onclick>
+				</item>
+				<item id="1">
+					<label>$LOCALIZE[2]</label>
+					<onclick>ActivateWindow(music,addons,return)</onclick>
+				</item>
+				<item id="2">
+					<label>$LOCALIZE[1]</label>
+					<onclick>ActivateWindow(pictures,addons,return)</onclick>
+				</item>
+				<item id="3">
+					<label>$LOCALIZE[0]</label>
+					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+				</item>
+			</content>
+		</control>				
+	</include>
+
 
 <!-- Home SubMenu TVShows -->
 	<include name="HomeSubMenuTVShows">
