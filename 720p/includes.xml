@@ -881,7 +881,7 @@
 			<align>right</align>
 			<orientation>horizontal</orientation>
 		  <!-- Weather -->
-	    <control type="group"  id="1">
+	   <!--  <control type="group"  id="1">
 				<posx>-45</posx>
 				<posy>0</posy>
 				<control type="image" id="1">
@@ -908,7 +908,7 @@
 					<label>$INFO[Window(Weather).Property(Current.Temperature)]°</label>
 					<visible>Weather.IsFetched</visible>
 				</control>
-		  </control>
+		  </control> -->
 		  <!-- Time -->
 			<control type="label" id="1">
 		    <width min="10" max="200">auto</width>

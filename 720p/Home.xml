@@ -1204,7 +1204,7 @@
 			<visible>![Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Window.IsActive(ShutdownMenu) | Window.IsActive(script-globalsearch-main.xml)]</visible>
 		  <include>HomeWeatherAndClock</include>
 	    <include>HomeSlideAnimations</include>
-			<control type="grouplist" id="21">
+			<!-- <control type="grouplist" id="21">
 				<posx>0</posx>
 				<posy>0</posy>
 				<height>0</height>
@@ -1263,7 +1263,7 @@
 					<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="in" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
           <animation effect="zoom"  start="100" end="90" time="200" tween="cubic" easing="in" center="auto" condition="!Control.HasFocus(212)" reversible="true">Conditional</animation>
 				</control>
-			</control>
+			</control> -->
 	  </control>
 
 
