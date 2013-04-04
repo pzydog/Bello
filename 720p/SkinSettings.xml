@@ -358,6 +358,70 @@
 						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
 					</control>
 
+					<!-- Custom Addon Buttons -->
+					<control type="radiobutton" id="8290">
+						<description>Custom Add-on Buttons</description>
+	          <include>SettingsRadioButton</include>
+						<label>Custom Add-on Buttons</label>
+						<onclick>Skin.ToggleSetting(CustomAddonButtons)</onclick>
+						<selected>Skin.HasSetting(CustomAddonButtons)</selected>
+					</control>
+					<control type="button" id="8291">
+            			<include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 1</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomAddon1.label)][/COLOR]</label2>
+						<onclick>Skin.Reset(CustomAddon1)</onclick>
+						<onclick>Skin.Reset(CustomAddon1.path)</onclick>
+						<onclick>Skin.Reset(CustomAddon1.label)</onclick>
+						<onclick>Skin.SetAddOn(CustomAddon1.path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetString(CustomAddon1.label)</onclick>
+						<visible>Skin.HasSetting(CustomAddonButtons)</visible>
+					</control>
+					<control type="button" id="8292">
+            			<include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 2</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomAddon2.label)][/COLOR]</label2>
+						<onclick>Skin.Reset(CustomAddon2)</onclick>
+						<onclick>Skin.Reset(CustomAddon2.path)</onclick>
+						<onclick>Skin.Reset(CustomAddon2.label)</onclick>
+						<onclick>Skin.SetAddOn(CustomAddon2.path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetString(CustomAddon2.label)</onclick>
+						<visible>Skin.HasSetting(CustomAddonButtons)</visible>
+					</control>
+					<control type="button" id="8293">
+            			<include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 3</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomAddon3.label)][/COLOR]</label2>
+						<onclick>Skin.Reset(CustomAddon3)</onclick>
+						<onclick>Skin.Reset(CustomAddon3.path)</onclick>
+						<onclick>Skin.Reset(CustomAddon3.label)</onclick>
+						<onclick>Skin.SetAddOn(CustomAddon3.path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetString(CustomAddon3.label)</onclick>
+						<visible>Skin.HasSetting(CustomAddonButtons)</visible>
+					</control>
+					<control type="button" id="8294">
+            			<include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 4</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomAddon4.label)][/COLOR]</label2>
+						<onclick>Skin.Reset(CustomAddon4)</onclick>
+						<onclick>Skin.Reset(CustomAddon4.path)</onclick>
+						<onclick>Skin.Reset(CustomAddon4.label)</onclick>
+						<onclick>Skin.SetAddOn(CustomAddon4.path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetString(CustomAddon4.label)</onclick>
+						<visible>Skin.HasSetting(CustomAddonButtons)</visible>
+					</control>
+					<control type="button" id="8295">
+            			<include>SettingsButton</include>
+						<label> • $LOCALIZE[31118] 5</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomAddon5.label)][/COLOR]</label2>
+						<onclick>Skin.Reset(CustomAddon5)</onclick>
+						<onclick>Skin.Reset(CustomAddon5.path)</onclick>
+						<onclick>Skin.Reset(CustomAddon5.label)</onclick>
+						<onclick>Skin.SetAddOn(CustomAddon5.path,xbmc.python.pluginsource)</onclick>
+						<onclick>Skin.SetString(CustomAddon5.label)</onclick>
+						<visible>Skin.HasSetting(CustomAddonButtons)</visible>
+					</control>
+
 				  <!-- Hide Home Categories -->
 					<control type="radiobutton" id="8250">
 						<description>Home Categories Buttonn</description>

@@ -187,6 +187,31 @@
 					<label>$LOCALIZE[0]</label>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 				</item>
+				<item id="4">
+					<label>$INFO[Skin.String(CustomAddon1.label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon1.path)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon1.label))</visible>
+				 </item>
+				<item id="5">
+					<label>$INFO[Skin.String(CustomAddon2.label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon2.path)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon2.label))</visible>
+				 </item>
+				<item id="6">
+					<label>$INFO[Skin.String(CustomAddon3.label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon3.path)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon3.label))</visible>
+				 </item>
+				<item id="7">
+					<label>$INFO[Skin.String(CustomAddon4.label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon4.path)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon4.label))</visible>
+				 </item>
+				<item id="8">
+					<label>$INFO[Skin.String(CustomAddon5.label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(CustomAddon5.path)])</onclick>
+					<visible>!IsEmpty(Skin.String(CustomAddon5.label))</visible>
+				 </item>
 			</content>
 		</control>				
 	</include>
