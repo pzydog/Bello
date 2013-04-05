@@ -2262,6 +2262,7 @@
 						<width>206</width>
 						<height>121</height>
 						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+						<visible>Stringcompare(Control.GetLabel(10),$LOCALIZE[16100])</visible>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
@@ -2345,6 +2346,7 @@
 						<width>206</width>
 						<height>121</height>
 						<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+						<visible>Stringcompare(Control.GetLabel(10),$LOCALIZE[16100])</visible>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<bordersize>6</bordersize>
             <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
@@ -2609,6 +2611,7 @@
 							<width>695</width>
 							<height>125</height>
 							<texture background="true">overlays/unwatched/banners/UnWatched_Banner.png</texture>
+							<visible>Stringcompare(Control.GetLabel(10),$LOCALIZE[16100])</visible>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
@@ -2695,6 +2698,7 @@
 							<width>280</width>
 							<height>165</height>
 							<texture background="true">overlays/unwatched/banners/UnWatched_Episodes.png</texture>
+							<visible>Stringcompare(Control.GetLabel(10),$LOCALIZE[16100])</visible>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<bordersize>6</bordersize>
 	            <visible>stringcompare(ListItem.Overlay,OverlayUnWatched.png)</visible>
