@@ -90,13 +90,13 @@
 			</focusedlayout>
 			<content>
 				<item id="0">
-					<label>$LOCALIZE[31202]</label>
-					<onclick>SetFocus(81)</onclick>
+					<label>Recently Added</label>
+					<onclick>ActivateWindow(videos,RecentlyAddedMovies,return)</onclick>
 					<visible>Library.HasContent(Movies)</visible>
 				</item>
 				<item id="1">
 					<label>$LOCALIZE[31018]</label>
-					<onclick>ActivateWindow(10025,plugin://plugin.video.the.trailers/,return)</onclick>
+					<onclick>ActivateWindow(10025,plugin://plugin.video.hdtrailers_net/,return)</onclick>
 					<visible>System.HasAddon(plugin.video.the.trailers)</visible>
 				</item>
 				<item id="2">
@@ -236,51 +236,56 @@
 			</focusedlayout>
 			<content>
 				<item id="0">
-					<label>$LOCALIZE[31203]</label>
-					<onclick>SetFocus(81)</onclick>
+					<label>Recently Aired</label>
+					<onclick>ActivateWindow(videos,special://skin/playlists/Recently Aired.xsp,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
 				<item id="1">
+					<label>Recently Added</label>
+					<onclick>ActivateWindow(videos,RecentlyAddedEpisodes,return)</onclick>
+					<visible>Library.HasContent(TVShows)</visible>
+				</item>
+				<item id="2">
 					<label>$LOCALIZE[31200]</label>
 					<onclick>XBMC.RunScript(script.tv.show.next.aired)</onclick>
 				  <visible>System.HasAddon(script.tv.show.next.aired)</visible>
 				</item>
-				<item id="2">			
+				<item id="3">			
 					<label>$LOCALIZE[20388]</label>
 					<onclick>ActivateWindow(videos,tvshowstudios,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
-				<item id="3">				
+				<item id="4">				
 					<label>$LOCALIZE[135]</label>
 					<onclick>ActivateWindow(videos,tvshowgenres,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>	
-				<item id="4">
+				<item id="5">
 					<label>$LOCALIZE[344]</label>
 					<onclick>ActivateWindow(videos,tvshowactors,return)</onclick>		
 					<visible>Library.HasContent(TVShows)</visible>		
 				</item>
-				<item id="5">
+				<item id="6">
 					<label>$LOCALIZE[652]</label>
 					<onclick>ActivateWindow(videos,tvshowyears,return)</onclick>		
 					<visible>Library.HasContent(TVShows)</visible>		
 				</item>
-				<item id="6">
+				<item id="7">
 					<label>$LOCALIZE[136]</label>
 					<onclick>ActivateWindow(videos,playlists,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
-				<item id="7">
+				<item id="8">
 					<label>$LOCALIZE[14022]</label>
 					<onclick>ActivateWindow(videos,root)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
-				<item id="8">
+				<item id="9">
 					<label>$LOCALIZE[744]</label>
 					<onclick>ActivateWindow(videos,files,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
 				</item>
-				<item id="9">
+				<item id="10">
 					<label>$LOCALIZE[1037]</label>
 					<onclick>ActivateWindow(videos,addons,return)</onclick>
 					<visible>Library.HasContent(TVShows)</visible>
@@ -309,9 +314,9 @@
 			</focusedlayout>
 			<content>
 				<item id="0">
-					<label>$LOCALIZE[31204]</label>
-					<onclick>SetFocus(81)</onclick>
-			    <visible>Library.HasContent(Music)</visible>
+					<label>Recently Added</label>
+					<onclick>ActivateWindow(musiclibrary,RecentlyAddedAlbums,return)</onclick>
+					<visible>Library.HasContent(Music)</visible>
 				</item>
 				<item id="1">
 					<label>$LOCALIZE[132]</label>
