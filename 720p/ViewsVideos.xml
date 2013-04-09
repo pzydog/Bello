@@ -2788,10 +2788,11 @@
 			  <visible>Control.IsVisible(58)</visible>
 				<control type="image">
 					<posx>-230</posx>
-					<posy>-40</posy>
+					<posy>100</posy>
 					<width>1800</width>
-					<height>800</height>
+					<height>600</height>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
+					<texture background="true">views/slide/shine.png</texture>
 				</control>
 		  </control>
 	
@@ -2820,17 +2821,7 @@
 						<height>153</height>
 						<colordiffuse>89FFFFFF</colordiffuse>
 						<fadetime>200</fadetime>
-						<aspectratio aligny="center">keep</aspectratio>
-						<texture background="true">$VAR[ThumbnailsTVShowsClearlogos]</texture>
-					</control>
-					<control type="image">
-						<posx>9</posx>
-						<posy>148</posy>
-						<width>272</width>
-						<height>153</height>
-						<texture background="true" flipy="true" diffuse="logo_matte_reflect.png">$VAR[ThumbnailsTVShowsClearlogos]</texture>
-						<fadetime>200</fadetime>
-						<colordiffuse>89FFFFFF</colordiffuse>
+						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
 				</itemlayout>
@@ -2845,16 +2836,7 @@
 							<width>290</width>
 							<height>164</height>
 							<fadetime>200</fadetime>
-							<aspectratio aligny="center">keep</aspectratio>
-						  <texture background="true">$VAR[ThumbnailsTVShowsClearlogos]</texture>
-						</control>
-						<control type="image">
-							<posx>12</posx>
-							<posy>148</posy>
-							<width>290</width>
-							<height>164</height>
-							<texture background="true" flipy="true" diffuse="logo_matte_reflect.png">$VAR[ThumbnailsTVShowsClearlogos]</texture>
-							<fadetime>200</fadetime>
+						  <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 							<aspectratio aligny="center">keep</aspectratio>
 						</control>
 					</control>
