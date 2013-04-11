@@ -85,7 +85,7 @@
 					<width>120</width>
 					<height>23</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-			    <texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/]</texture>
+			    <texture fallback="rating/rating0.png">$INFO[ListItem.Rating,rating/imdb/]</texture>
 				</control>
 				<control type="grouplist">
 					<posx>630</posx>

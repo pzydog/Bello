@@ -654,12 +654,14 @@
 	    </animation>
 			<!-- StarRating -->
 			<control type="image">
-				<posx>1050</posx>
+				<posx>1100</posx>
 				<posy>12</posy>
-				<width>140</width>
-				<height>30</height>
+				<width>92</width>
+				<height>28</height>
         <aspectratio>keep</aspectratio>
-				<texture fallback="rating/rating0.png">$INFO[ListItem.StarRating,rating/,]</texture>
+        <colordiffuse>99FFFFFF</colordiffuse>
+				<visible>!IsEmpty(ListItem.Rating)</visible>
+				<texture>rating/imdb.png</texture>
 			  <animation type="Conditional" reversible="false" condition="!Window.IsActive(VolumeBar)">
 		      <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
 		      <effect type="slide" start="0,35" end="0,0" time="350" tween="cubic" easing="out" />
@@ -669,6 +671,19 @@
 		      <effect type="slide" start="0,0" end="0,35" time="350" tween="sine" easing="out" />
 			  </animation>
 			</control>
+			
+			<control type="label">
+					<posx>1159</posx>
+					<posy>11</posy>
+					<width>30</width>
+					<height>28</height>
+					<font>FontSize_14B</font>
+					<align>center</align>
+					<aligny>center</aligny>
+			    <textcolor>99FFFFFF</textcolor>
+					<scroll>false</scroll>
+					<label>$INFO[ListItem.Rating]</label>
+			  </control>
       <!-- Buttons -->
 			<control type="grouplist" id="9000">
 				<posx>0</posx>
