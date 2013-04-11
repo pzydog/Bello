@@ -2776,7 +2776,7 @@
 	</include>		
 
 	<!-- =========================== -->
-	<!-- ==== Banners View "58" ==== -->
+	<!-- ===== Logos View "58" ===== -->
 	<!-- =========================== -->
 	
 	<include name="LogosView_Videos">
@@ -2791,6 +2791,7 @@
 					<posy>100</posy>
 					<width>1800</width>
 					<height>600</height>
+					<colordiffuse>99FFFFFF</colordiffuse>
 					<aspectratio align="center" aligny="center">stretch</aspectratio>
 					<texture background="true">views/slide/shine.png</texture>
 				</control>
@@ -2805,7 +2806,7 @@
 				<onright>58</onright>
 	      <onup>100</onup>
 	      <ondown>60</ondown>
-	      <viewtype label="31087">List</viewtype>
+	      <viewtype label="31087">Logos</viewtype>
 	      <scrolltime tween="Cubic" easing="out">500</scrolltime>
 	      <orientation>horizontal</orientation>
 	      <focusposition>2</focusposition>
@@ -2824,6 +2825,18 @@
 						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 						<aspectratio aligny="center">keep</aspectratio>
 					</control>
+					<control type="label">
+	          <posx>159</posx>
+	          <posy>20</posy>
+	          <width>290</width>
+						<height>164</height>
+						<font>FontSize_26</font>
+	          <scroll>true</scroll>
+	          <label>$INFO[ListItem.Label]</label>
+	          <align>center</align>
+        		<aligny>center</aligny>
+	          <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+	        </control>
 				</itemlayout>
 				<focusedlayout width="318" height="178">
 					<control type="group">
@@ -2839,6 +2852,19 @@
 						  <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 							<aspectratio aligny="center">keep</aspectratio>
 						</control>
+						<control type="label">
+		          <posx>159</posx>
+		          <posy>20</posy>
+		          <width>290</width>
+							<height>164</height>
+							<font>FontSize_26</font>
+		          <scroll>true</scroll>
+		          <label>$INFO[ListItem.Label]</label>
+		          <align>center</align>
+		          <textcolor>FFFFFFFF</textcolor>
+        			<aligny>center</aligny>
+		          <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+		        </control>
 					</control>
 				</focusedlayout>
 			</control>

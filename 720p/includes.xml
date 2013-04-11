@@ -1063,12 +1063,6 @@
 		<value condition="IsEmpty(ListItem.Art(clearlogo)) | !Skin.HasSetting(ShowClearlogoThumb)">$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 
-	<variable name="ThumbnailsTVShowsClearlogos">
-		<value condition="!IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-		<value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-		<value condition="IsEmpty(ListItem.Art(clearlogo)) | !Skin.HasSetting(ShowClearlogoThumb)">$INFO[ListItem.Art(fanart)]</value>
-	</variable>
-
 	<variable name="ThumbnailsMoviesThumbs">
 		<value condition="!IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
