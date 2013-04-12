@@ -2552,12 +2552,22 @@
 						<control type="image">
 							<posx>180</posx>
 							<posy>204</posy>
+							<width>30</width>
+							<height>17</height>
+							<aspectratio>keep</aspectratio>
+							<texture>views/list/sets_nf.png</texture>
+	            <visible>Substring(ListItem.Path,videodb://1/7,left)</visible>
+						</control>
+						<control type="image">
+							<posx>180</posx>
+							<posy>204</posy>
 							<width>29</width>
 							<height>18</height>
 							<align>left</align>
 							<aligny>center</aligny>
 					    <colordiffuse>77white</colordiffuse>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
+							<visible>!Substring(ListItem.Path,videodb://1/7,left)</visible>
 						</control>
 						<control type="label">
 							<posx>215</posx>
