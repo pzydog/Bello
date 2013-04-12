@@ -560,7 +560,7 @@
 					    <colordiffuse>55ffffff</colordiffuse>
 					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+							<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Substring(ListItem.Path,videodb://1/7,left)</visible>
 						</control>
 
 						<control type="image.">
@@ -680,7 +680,7 @@
 					    <colordiffuse>ffcccccc</colordiffuse>
 					    <aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-							<visible>Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+							<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !Substring(ListItem.Path,videodb://1/7,left)</visible>
 						</control>
 
 						<control type="image.">
