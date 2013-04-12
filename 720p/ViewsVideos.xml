@@ -889,12 +889,20 @@
 							<control type="image">
 								<posy>41</posy>
 								<width>30</width>
+								<height>17</height>
+								<aspectratio>keep</aspectratio>
+								<texture>views/list/sets_nf.png</texture>
+		            <visible>Substring(ListItem.Path,videodb://1/7,left)</visible>
+							</control>
+							<control type="image">
+								<posy>41</posy>
+								<width>30</width>
 								<height>20</height>
 								<align>left</align>
 								<aligny>center</aligny>
 						    <colordiffuse>77white</colordiffuse>
 								<texture>$INFO[ListItem.VideoResolution,flags/def/,.png]</texture>
-								<visible>Container.Content(Movies)</visible>
+								<visible>Container.Content(Movies) + !Substring(ListItem.Path,videodb://1/7,left)</visible>
 							</control>
 							<control type="label">
 								<posx>40</posx>
