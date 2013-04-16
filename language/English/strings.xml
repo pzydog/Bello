@@ -68,7 +68,7 @@
   <string id="31116">Show Music Videos Button</string>
   <string id="31117">Music Button opens...</string>
   <string id="31118">Custom Button</string>
-  <string id="31119">Enable Login Screen</string>
+  <string id="31119">Custom Home Buttons</string>
   <string id="31120">Hide Movies Submenu</string>
   <string id="31121">Hide TV Shows Submenu</string>
   <string id="31122">Hide Music Submenu</string>
@@ -102,6 +102,7 @@
   <string id="31150">Download [COLOR=selected]poster.jpg[/COLOR] for all TV Shows</string>
   <string id="31151">Show RSS feed in whole skin</string>
   <string id="31152">Hide Flagging read from video filenames [COLOR=55white](Blu-ray, HD-DVD)[/COLOR]</string>
+  <string id="31153">Enable Login Screen</string>
 
   <!-- Scripts labels -->
   <string id="31200">TV Guide</string>
@@ -138,7 +139,7 @@
 	<string id="31231">Max Humidity</string>		
 	<string id="31232">Min Humidity</string>
   <string id="31233">Chance of Precipitation</string>
-  <string id="31234">Fetching forecast info for...</string>
+  <string id="31234">Fetching Forecast Info for...</string>
   <string id="31235">Current Weather Conditions</string>
   <string id="31236">Forecast</string>
   <string id="31237">View</string>
