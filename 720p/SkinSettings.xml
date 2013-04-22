@@ -16,7 +16,7 @@
 			  <texture background="true">windows/settings/bg_settings.png</texture>
 			</control>
 		</control>			
-    
+
 		<!-- ======================== -->
 		<!-- == Categories Buttons == -->
 		<!-- ======================== -->
@@ -204,18 +204,18 @@
 								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[1038])">Skin.SetString(MusicPath,root)</onclick>
 								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[136])">Skin.SetString(MusicName,$LOCALIZE[1038])</onclick>
 								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[136])">Skin.SetString(MusicPath,plugins)</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[521])">Skin.SetString(MusicName,$LOCALIZE[136])</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[521])">Skin.SetString(MusicPath,playlists)</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[517])">Skin.SetString(MusicName,$LOCALIZE[521])</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[517])">Skin.SetString(MusicPath,compilations)</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[359])">Skin.SetString(MusicName,$LOCALIZE[517])</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[359])">Skin.SetString(MusicPath,recentlyplayedalbums)</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10505])">Skin.SetString(MusicName,$LOCALIZE[359])</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10505])">Skin.SetString(MusicPath,recentlyaddedalbums)</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10504])">Skin.SetString(MusicName,$LOCALIZE[10505])</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10504])">Skin.SetString(MusicPath,top100albums)</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[652])">Skin.SetString(MusicName,$LOCALIZE[10504])</onclick>
-                <onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[652])">Skin.SetString(MusicPath,top100songs)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[521])">Skin.SetString(MusicName,$LOCALIZE[136])</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[521])">Skin.SetString(MusicPath,playlists)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[517])">Skin.SetString(MusicName,$LOCALIZE[521])</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[517])">Skin.SetString(MusicPath,compilations)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[359])">Skin.SetString(MusicName,$LOCALIZE[517])</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[359])">Skin.SetString(MusicPath,recentlyplayedalbums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10505])">Skin.SetString(MusicName,$LOCALIZE[359])</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10505])">Skin.SetString(MusicPath,recentlyaddedalbums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10504])">Skin.SetString(MusicName,$LOCALIZE[10505])</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[10504])">Skin.SetString(MusicPath,top100albums)</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[652])">Skin.SetString(MusicName,$LOCALIZE[10504])</onclick>
+								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[652])">Skin.SetString(MusicPath,top100songs)</onclick>
 								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[135])">Skin.SetString(MusicName,$LOCALIZE[652])</onclick>
 								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[135])">Skin.SetString(MusicPath,years)</onclick>
 								<onclick condition="stringcompare(Skin.String(MusicName),$LOCALIZE[134])">Skin.SetString(MusicName,$LOCALIZE[135])</onclick>
@@ -315,7 +315,7 @@
 						<selected>Skin.HasSetting(HideSettingsSubMenu)</selected>
 					</control>
 
-				  <!-- Custom HomeMenu Buttons -->
+				  <!-- Custom Home Buttons -->
 					<control type="radiobutton" id="8280">
 						<description>Custom Home Buttons</description>
 	          <include>SettingsRadioButton</include>
@@ -358,6 +358,7 @@
 						<onclick>RunScript(script.favourites,property=CustomFavourite5)</onclick>
 						<visible>Skin.HasSetting(CustomHomeButtons)</visible>
 					</control>
+
 
 					<!-- Custom Addon Buttons -->
 					<control type="radiobutton" id="8290">
@@ -513,6 +514,8 @@
 						<selected>Skin.HasSetting(HideHomeMenuTrailersButton)</selected>
 						<visible>Skin.HasSetting(HomeCategoriesSettings)</visible>
 					</control>
+
+				  <!-- Show Home Categories Buttons -->
 					<control type="radiobutton" id="8261">
 						<description>Show Videos Button</description>
 	          <include>SettingsRadioButton</include>
@@ -561,26 +564,19 @@
 						<onclick>Skin.ToggleSetting(HideBGFanart)</onclick>
 						<selected>Skin.HasSetting(HideBGFanart)</selected>
 					</control>
-					<control type="radiobutton." id="8302">
-	          <include>SettingsRadioButton</include>
-						<label>31131</label>
-						<onclick>Skin.ToggleSetting(HomeFanartSlideShow)</onclick>
-						<selected>Skin.HasSetting(HomeFanartSlideShow)</selected>
-						<enable>!Skin.HasSetting(HideBGFanart)</enable>
-					</control>
-					<control type="radiobutton" id="8303">
+					<control type="radiobutton" id="8302">
 	          <include>SettingsRadioButton</include>
 						<label>31132</label>
 						<onclick>Skin.ToggleSetting(HideBGVideo)</onclick>
 						<selected>Skin.HasSetting(HideBGVideo)</selected>
 					</control>
-					<control type="radiobutton" id="8304">
+					<control type="radiobutton" id="8303">
 	          <include>SettingsRadioButton</include>
 						<label>31133</label>
 						<onclick>Skin.ToggleSetting(CustomBackground)</onclick>
 						<selected>Skin.HasSetting(CustomBackground)</selected>
 					</control>
-					<control type="button" id="8305">
+					<control type="button" id="8304">
 	          <include>SettingsButton</include>
 						<label> • $LOCALIZE[31135]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomImageBackgroundPath)][/COLOR]</label2>
@@ -588,13 +584,21 @@
 						<onclick>Skin.SetImage(CustomImageBackgroundPath)</onclick>
 						<visible>Skin.HasSetting(CustomBackground)</visible>
 					</control>
-					<control type="button" id="8306">
+					<control type="button" id="8305">
 	          <include>SettingsButton</include>
 						<label> • $LOCALIZE[31136]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomFolderBackgroundPath)][/COLOR]</label2>
 						<onclick>Skin.Reset(CustomImageBackgroundPath)</onclick>
 						<onclick>Skin.SetPath(CustomFolderBackgroundPath)</onclick>
 						<visible>Skin.HasSetting(CustomBackground)</visible>
+					</control>
+					<control type="radiobutton" id="8306">
+	          <include>SettingsRadioButton</include>
+						<label>    • $LOCALIZE[31131]</label>
+						<onclick>Skin.ToggleSetting(ShowCustomBackgroundOnHomeOnly)</onclick>
+						<selected>Skin.HasSetting(ShowCustomBackgroundOnHomeOnly)</selected>
+						<visible>Skin.HasSetting(CustomBackground)</visible>
+						<enable>!IsEmpty(Skin.String(CustomFolderBackgroundPath))</enable>
 					</control>
 				</control>
 
