@@ -80,19 +80,19 @@
 				<content>
 					<item id="1">
 						<label>128</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="2">
 						<label>513</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="3">
 						<label>33069</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="4">
 						<label>24001</label>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 				</content>
 			</control>
@@ -641,6 +641,19 @@
 						<label> • $LOCALIZE[1045]</label>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(SubtitleScript_Path)])</onclick>
 						<visible>!IsEmpty(Skin.String(SubtitleScript_Path))</visible>
+					</control>
+					<control type="button" id="8416">
+            <include>SettingsButton</include>
+						<label>$LOCALIZE[31154]</label>
+						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(TrailersAddon_Path))][/COLOR]</label2>
+						<onclick>Skin.SetAddon(TrailersAddon_Path,xbmc.addon.video)</onclick>
+						<enable>!Skin.HasSetting(HideHomeMenuTrailersButton)</enable>
+					</control>
+					<control type="button" id="8417">
+            <include>SettingsButton</include>
+						<label> â€¢ $LOCALIZE[1045]</label>
+						<onclick>Addon.OpenSettings($INFO[Skin.String(TrailersAddon_Path)])</onclick>
+						<visible>![IsEmpty(Skin.String(TrailersAddon_Path)) | Skin.HasSetting(HideHomeMenuTrailersButton)]</visible>
 					</control>
 					<control type="radiobutton" id="8405">
 	          <include>SettingsRadioButton</include>
