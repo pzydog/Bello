@@ -429,7 +429,7 @@
 					<onclick>ActivateWindow(VideosSettings)</onclick>
 				</item>
 				<item id="7">
-					<label>$LOCALIZE[31010]</label>
+					<label>$LOCALIZE[31000]</label>
 					<onclick>ActivateWindow(PVRSettings)</onclick>
 				</item>
 				<item id="8">
